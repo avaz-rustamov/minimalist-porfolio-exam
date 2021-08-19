@@ -38,7 +38,58 @@
     </div>
   </header>
 <main class="main">
+<section class="site-about">
+    <div class="container">
+      <div class="about">
+        <div class="man__box">
+          <picture class="man__picture">
+            <source
+              type="image/webp"
+              media="(max-width: 425px)"
+              srcset="./img/man-mobile.webp 1x",
+                      ./img/man-mobile@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 768px)"
+              srcset="./img/man-tablet.webp 1x",
+                     ./img/man-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="./img/man.webp 1x",
+                      ./img/man.webp 2x"
+            />
 
+            <source
+              media="(max-width: 425px)"
+              srcset="./img/man-mobile.png 1x",
+                     ./img/man-mobile@2x.png 2x"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./img/man-tablet.png 1x",
+                      ./img/man-tablet@2x.png 2x"
+            />
+
+            <img src="./img/man.png" srcset="./img/man.png 1x, ./img/man@2x.png 2x"
+            alt="Man picture"
+            width="540" height="600"
+            />
+          </picture>
+        </div>
+
+        <div class="about-content">
+          <h2 class="about__heading">About Me</h2>
+          <p class="about__text">
+            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+
+          <a href="#" class="button__white">Go to Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <!-- FOOTER -->
   <footer class="site-footer">
