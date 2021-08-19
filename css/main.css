@@ -1,4 +1,5 @@
 body {
+  font-family: "Public Sans", "Times New Roman", sans-serif;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -26,6 +27,20 @@ html {
   flex-grow: 1;
 }
 
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"), url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"), url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -374,6 +389,72 @@ template {
   padding-right: 20px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+/* Site Nav  */
+.sitenav {
+  margin-left: auto;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitenav__list-item {
+  border: 3px solid transparent;
+  margin-right: 30px;
+  padding-bottom: 27px;
+  padding-top: 32px;
+}
+.sitenav__list-item:hover {
+  color: #5FB4A2;
+}
+
+.sitenav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9597A5;
+}
+.sitenav__link:hover {
+  color: #5FB4A2;
+}
+
+/* Burger Nav  */
+.burger-nav {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .burger-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .burger-nav {
+    display: block;
+  }
+
+  .sitenav {
+    display: none;
+  }
+
+  footer .sitenav {
+    display: block;
+  }
+
+  .sitenav__list {
+    flex-direction: column;
+  }
+}
 /* Site Footer  */
 .site-footer {
   background-color: #33323D;
@@ -434,4 +515,18 @@ template {
 
 .about-link-blue:active {
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .sitenav-footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

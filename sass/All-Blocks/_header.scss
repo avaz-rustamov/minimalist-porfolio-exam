@@ -1,7 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: red;
 }
 
 /* Site Nav  */
@@ -36,6 +35,33 @@
 
   &:hover {
     color: #5FB4A2;
+  }
+}
+
+/* Burger Nav  */
+.burger-nav {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .burger-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .burger-nav {
+    display: block;
+  }
+  .sitenav {
+    display: none;
+  }
+  footer .sitenav {
+    display: block;
+  }
+  .sitenav__list {
+    flex-direction: column;
   }
 }
 
