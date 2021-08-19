@@ -454,6 +454,10 @@ template {
   .sitenav__list {
     flex-direction: column;
   }
+
+  .site_header {
+    padding-top: 32px;
+  }
 }
 /* Site Footer  */
 .site-footer {
