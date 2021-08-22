@@ -17,7 +17,7 @@
 }
 
 .hero__heading {
-  font-family: var(--header-fonts);
+  font-family: $font-headings;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
@@ -34,30 +34,32 @@
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: var(--header-color);
+  background-color: $main-dark;
   color: #FFFFFF;
   padding-top: 17px;
   padding-bottom: 17px;
   padding-right: 24px;
   padding-left: 68px;
   display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/hero-arrov-bottom.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-color: #fff;
+    background-size: contain;
+    background-color: transparent;
+    width: 16px;
+    height: 12px;
+    /* padding: 22px; */
+    top: 20px;
+    left: 10px;
+  }
 }
 
-.button__link::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/hero-arrov-bottom.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-color: #fff;
-  background-size: contain;
-  background-color: transparent;
-  width: 16px;
-  height: 12px;
-  /* padding: 22px; */
-  top: 20px;
-  left: 10px;
-}
+
 
 .button__link:hover {
   background-color: #5FB4A2;
