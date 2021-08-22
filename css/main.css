@@ -551,7 +551,7 @@ template {
     max-width: 330px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .about {
     flex-direction: column;
   }
