@@ -1,6 +1,8 @@
 .header {
   display: flex;
   align-items: center;
+  padding-bottom: 27px;
+  padding-top: 32px;
 }
 
 /* Site Nav  */
@@ -19,12 +21,14 @@
 .sitenav__list-item {
   border: 3px solid transparent;
   margin-right: 30px;
-  padding-bottom: 27px;
-  padding-top: 32px;
+
 
   &:hover {
     color: #5FB4A2;
   }
+}
+.sitenav__list-item:last-child {
+  margin-right: 0;
 }
 
 
@@ -43,13 +47,14 @@
   border: none;
   background-color: transparent;
   margin-left: auto;
+  display: none;
 }
 
-@media only screen and (max-width: 5000px) {
-  .burger-nav {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 5000px) {
+//   .burger-nav {
+//     display: none;
+//   }
+// }
 @media only screen and (max-width: 600px) {
   .burger-nav {
     display: block;

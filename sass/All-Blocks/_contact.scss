@@ -52,6 +52,7 @@
    color: $main-dark;
    border: 1px solid #33323D;
    padding: 17px 32px;
+   display: inline-block;
  }
 
  .button__white:hover {
@@ -62,6 +63,7 @@
 
  .button__white:active {
    opacity: 0.8;
+
  }
 
  @media only screen and (max-width: 700px) {
