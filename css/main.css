@@ -625,6 +625,17 @@ template {
   transition: 0.3s ease;
 }
 
+@media only screen and (max-width: 900px) {
+  .hero-content {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(../img/hero-bg-tablet.png);
+    background-size: center center;
+    height: 600px;
+  }
+}
 .site-footer {
   background-color: #33323D;
 }

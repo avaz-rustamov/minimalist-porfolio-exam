@@ -70,3 +70,16 @@
   background-color: #D2D8DB;
   transition: 0.3s ease;
 }
+
+@media only screen and (max-width: 900px) {
+  .hero-content {
+    display: none;
+  }
+  .hero {
+      background-image: url(../img/hero-bg-tablet.png);
+      background-size: center center;
+  //   width: 100%;
+    height: 600px;
+  //   // padding: 100px 100px;
+  }
+}
