@@ -1,14 +1,15 @@
 .header {
   display: flex;
   align-items: center;
-  padding-bottom: 27px;
-  padding-top: 32px;
+  padding-bottom: 54px;
+  padding-top: 64px;
 }
 
 /* Site Nav  */
 .sitenav {
   margin-left: auto;
 }
+
 
 .sitenav__list {
   display: flex;
@@ -50,24 +51,39 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .burger-nav {
     display: block;
   }
   .sitenav {
+    position: relative;
+    justify-content: center;
+    align-items: center;
     display: none;
+    background-color: $main-dark;
+    padding: 40px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sitenav--open .sitenav {
+    display: block;
   }
   footer .sitenav {
     display: block;
   }
   .sitenav__list {
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   .site_header {
     padding-top: 32px;
   }
   .sitenav__list-item {
-    margin-right: 30px;
+    margin-right: 0px;
+    width: 115px;
 
   }
 }
